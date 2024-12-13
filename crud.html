@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/crud.css">
+</head>
+
+<body>
+    <section class="crud">
+        <div class="container  crud-container  p-4 my-4">
+            <h1 class="text-center">Crud System</h1>
+            <div class="form-floating mb-3">
+                <input oninput="validationName()" type="text" class="form-control" id="productName" placeholder="">
+                <label for="productName">Product Name</label>
+
+                <p id="msgName" class="alert alert-danger d-none">it must start with a letter, be 3 to 20 character
+                    long, and can only containe letters, numbers, or underscores.</p>
+            </div>
+            <div class="form-floating mb-3">
+                <input oninput="validationPrice()" type="number" class="form-control" id="productPrice" placeholder="">
+                <label for="productPrice">ProductPrice</label>
+
+                <p id="msgPrice" class="alert alert-danger d-none">It should be a number with up to 10 digits before the
+                    decimal point and up to 2 digits after the decimal (e.g, 100, 49.99, 1234567890.50)</p>
+            </div>
+            <div class="form-floating mb-3">
+                <input oninput="validationCategory()" list="list" type="text" class="form-control" id="productCategory"
+                    placeholder="">
+                <label for="productCategory">ProductCategory</label>
+                <p id="msgCategory" class="alert alert-danger d-none">it must be Tv Or Mobile Or Screens Or Electronics.
+                </p>
+                <datalist id="list">
+                    <option value="Tv" />
+                    <option value="Mobile" />
+                    <option value="Screens" />
+                    <option value="Electronics" />
+                </datalist>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea oninput="validationDesc()" style="height: 100px;" class="form-control" id="productDescription"
+                    placeholder=""></textarea>
+                <label for="productDescription">ProductDescription</label>
+                <p id="msgDesc" class="alert alert-danger d-none">it must Contain At Least 3 Character
+                </p>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control" id="productImage" placeholder="">
+                <label for="productImage">ProductImage</label>
+            </div>
+            <input oninput="searchItem()" type="search" class="form-control w-75 m-auto my-3"
+                placeholder="Search By Name" id="search">
+            <button id="addBtn" onclick="addProduct()" class="btn btn-primary first-btn">Add Product</button>
+            <button onclick="updateProduct()" id="updateBtn" class="btn btn-danger second-btn d-none">Update
+                Product</button>
+        </div>
+    </section>
+
+    <section class="pb-4">
+        <div class="container-fluid">
+            <div id="rowData" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+            </div>
+
+            <button id="logoutBtn" class="btn btn-dark my-5">Log Out</button>
+
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/crud.js"></script>
+</body>
+
+</html>

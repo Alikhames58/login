@@ -1,0 +1,28 @@
+img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.crud-container
+{
+    background-color: #0A97B0;
+}
+.crud-container .first-btn
+{
+    background-color: #2A3335;
+    border: 0;
+}
+.crud-container .second-btn
+{
+    background-color: #0A5EB0;
+    border: 0;
+}
+.first-btn:active
+{
+    background-color: #0a5eb0 !important;
+}
+.second-btn:active
+{
+    background-color: #2a3335 !important;
+
+}

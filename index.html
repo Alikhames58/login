@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="login p-5">
+      <div
+        class="container p-5 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="w-75 log-form p-5 d-flex align-items-center justify-content-center flex-column"
+        >
+          <h1 class="h1 text-center text-light">Login System</h1>
+          <div class="email-input w-100 mx-auto d-flex flex-column mb-3">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+          </div>
+
+          <div class="password-input w-100 mx-auto d-flex flex-column">
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <button id="login" class="btn btn-outline-info w-100 mt-3">
+            Login
+          </button>
+          <p class="leado">
+            Don’t have an account? <a href="./signup.html">Sign Up</a>
+          </p>
+          <span class="invalid text-danger d-none">Invalid email or password</span>
+          <span class="both text-danger d-none"
+            >Please enter both email and password.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

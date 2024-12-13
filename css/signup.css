@@ -1,0 +1,62 @@
+:root {
+    --main-color: #24353F;
+}
+
+.login {
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.log-form {
+    background-color: var(--main-color);
+    /* f8fafc */
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+.form-control {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.form-control::placeholder {
+    color: #CED4DA !important;
+}
+
+.form-control:focus {
+    color: var(--main-color);
+    background-color: var(--main-color);
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .1rem rgba(0, 123, 255, .25)
+}
+
+
+
+.btn-outline-info:hover {
+    background-color: #17A2B8 !important;
+    color: #fff;
+    outline: 0;
+    border-color: transparent;
+}
+
+.leado {
+    color: #fff;
+}
+
+.leado a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.leado a:hover {
+    text-decoration: underline;
+
+}
+.alert-success{
+    color: rgb(21, 196, 21);
+    font-size: 30px;
+}
+.text-danger
+{
+    font-size: 30px;
+}
